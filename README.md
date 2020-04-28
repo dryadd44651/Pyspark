@@ -1,7 +1,7 @@
 # Pyspark
 MapReduce.py 
 - some pyspark map-reduce sample. 
-
+>- check the detail in mapreduce.md
 pysparkML.py 
 - k-mean classifer
 *implemented k-mean to classify the movies category(k=10) by user-item matrix*
