@@ -4,6 +4,7 @@ question1~4.py
 >- check the detail in mapreduce.md
 pysparkML.py 
 - k-mean classifer
+
 *implemented k-mean to classify the movies category(k=10) by user-item matrix*
 1.	Process input data from itemusermat.
 2.  The first number in the line is the movie id
