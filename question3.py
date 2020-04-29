@@ -8,12 +8,12 @@ if __name__ == "__main__":
         shutil.rmtree("Q3_output")
         print("deleted")
     if len(sys.argv) != 4:
-        print("Usage: wordcount <business.csv> <review.csv> <user.csv>", file=sys.stderr)
+        print("Usage: question1 <business.csv> <review.csv> <user.csv>", file=sys.stderr)
         sys.argv = [0,0,0,0]
         sys.argv[1] = "business.csv"
         sys.argv[2] = "review.csv"
         sys.argv[3] = "user.csv"
-        #sys.exit(-1)
+        sys.exit(-1)
 
 
     sc = SparkContext.getOrCreate();

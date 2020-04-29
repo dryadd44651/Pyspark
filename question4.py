@@ -1,4 +1,4 @@
-# python yelpBusinessRate.py business.csv review.csv
+# python question4.py business.csv review.csv
 
 from __future__ import print_function
 import sys
@@ -18,13 +18,11 @@ if __name__ == "__main__":
         shutil.rmtree("Q4_Output")
         print("deleted")
     if len(sys.argv) != 3:
-        print("Usage: wordcount <business.csv> <review.csv>", file=sys.stderr)
+        print("Usage: question1 <business.csv> <review.csv>", file=sys.stderr)
         sys.argv = [0,0,0]
         sys.argv[1] = "business.csv"
         sys.argv[2] = "review.csv"
-        
-        
-        #sys.exit(-1)
+        sys.exit(-1)
 
     sys.argv[1] = "business.csv"
     sys.argv[2] = "review.csv"

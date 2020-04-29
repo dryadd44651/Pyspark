@@ -16,9 +16,9 @@ def mapper(line):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: wordcount <file>", file=sys.stderr)
+        print("Usage: question1 <file>", file=sys.stderr)
         sys.argv[1] = "soc-LiveJournal1Adj.txt"
-        # sys.exit(-1)
+        sys.exit(-1)
     sc = SparkContext.getOrCreate()
     result = sc.textFile(sys.argv[1]).map(lambda x: x.split('\t'))\
         .flatMap(mapper)\
